@@ -29,6 +29,15 @@ spec:
     value: 5d
   - name: dockerfile
     value: Dockerfile
+  taskRunSpecs:
+  - pipelineTaskName: build-container
+    stepSpecs:
+    - name: build
+      computeResources:
+        requests:
+          memory: 2Gi
+        limits:
+          memory: 2Gi
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
