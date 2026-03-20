@@ -88,3 +88,5 @@ rules:
   week: 4
   weekday: 4
 ```
+
+Ping
